@@ -10,8 +10,8 @@ before_deploy:
 deploy:
     provider: script
     script: 
-        docker push italogouveia2/mysql-rest-with-spring-boot-udemy;
-        docker push italogouveia2/rest-with-spring-boot-usemy;
+        docker push italogouveia2/mysql-rest-with-spring-boot;
+        docker push italogouveia2/rest-with-spring-boot;
     on:
         branch: master
 notifications:
