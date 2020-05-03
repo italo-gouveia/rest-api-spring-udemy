@@ -43,6 +43,7 @@ after_success:
     # Parte abaixo pode ser substituida pelo comentário ao final porém a parte abaixo possui muito mais recursos para o deploy
     - echo "Docker image OK!"
     - sudo add-apt-repository ppa:eugenesan/ppa
+    - yes "" | command
     - sudo apt-get update
     - sudo apt-get install jq -y
     - curl https://raw.githubusercontent.com/silinternational/ecs-deploy/master/ecs-deploy | sudo tee -a /usr/bin/ecs-deploy
