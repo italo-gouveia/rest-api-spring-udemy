@@ -38,7 +38,7 @@ after_success:
     - pip3 install awscli --upgrade --user
     - export PATH=$PATH:$HOME/.local/bin
     - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $IMAGE_REPO_URL
-    - docker tag rest-with-spring-boot-udemy:latest $IMAGE_REPO_URL:$TRAVIS_JOB_ID
+    - docker tag rest-with-spring-boot:latest $IMAGE_REPO_URL:$TRAVIS_JOB_ID
     - docker push $IMAGE_REPO_URL:$TRAVIS_JOB_ID
     # Parte abaixo pode ser substituida pelo comentário ao final porém a parte abaixo possui muito mais recursos para o deploy
     - echo "Docker image OK!"
