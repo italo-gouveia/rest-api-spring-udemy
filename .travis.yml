@@ -10,7 +10,7 @@ before_install:
     - sudo apt-get update
     #- cd 17\ RestWithSpringBootUdemy\ Docker/
     #- cd Deploy/
-    - cd /RestWithSpringBootUdemy
+    - cd .\RestWithSpringBootUdemy\
     - echo "Let's start Maven Package!"
     - mvn clean package
     - cd ..
