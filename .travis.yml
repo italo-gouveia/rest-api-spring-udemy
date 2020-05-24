@@ -24,7 +24,7 @@ deploy:
     provider: script
     script: 
         docker tag rest-with-spring-boot-udemy:latest italogouveia2/rest-with-spring-boot-udemy:$TRAVIS_JOB_ID
-        docker push italogouveia2/rest-with-spring-boot-udemy:$TRAVIS_JOB_ID;
+        docker push rest-with-spring-boot-udemy:$TRAVIS_JOB_ID;
     on:
         branch: master
 after_success:
